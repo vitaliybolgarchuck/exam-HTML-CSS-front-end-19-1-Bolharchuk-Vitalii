@@ -3,10 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Fashion</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="mediaq.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400i,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 </head>
 <body>
 	<header class="page-header">
@@ -15,135 +20,186 @@
 			<span>tagline here</span>
 		</a>
 		<nav class="main-mav">
-			<ul class="main-nav-list">
+			<ul class="main-mav-list">
 				<li class="li">
-					<a href="#">HOME</a>
+					<a href="#">home</a>
 				</li>
 				<li class="li">
-					<a href="#">SHOP</a>
+					<a href="#">shop</a>
 				</li>
 				<li class="li">
-					<a href="#">WOMEN</a>
+					<a href="#">women</a>
 				</li>
 				<li class="li">
-					<a href="#">MEN</a>
+					<a href="#">men</a>
 				</li>
 				<li class="li">
-					<a href="#">FIND STORES</a>
+					<a href="#">find stores</a>
 				</li>
 			</ul>
 		</nav>
 		<ul class="user-buttons">
 			<li class="cart">
-				<a href="#"><img src="img\cart1.png"></a>
+				<a href="#"><img src="img/cart1.png" alt="img"></a>
 			</li>
-			<li class="search">
-				<a href="#"><img src="img\search-.png"></a>
+			<li>
+				<a href="#"><img src="img/search-.png" alt="img"></a>
 			</li>
 			<li class="burger">
-				<a href="#"><img src="img\iconlist.png"></a>
+				<a href="#"><img src="img/iconlist.png" alt="img"></a>
 			</li>
 		</ul>
-	</header>
-	<section id="first-section">
-		<div class="social-menu">
+		<button type="button" class="hamburger-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar icon-bar-1"></span>
+			<span class="icon-bar icon-bar-2"></span>
+			<span class="icon-bar icon-bar-3"></span>
+		</button>
+		<div class="mobile-menu">
 			<ul>
-				<li><a href="#"><img src="img\fb.png"></a>
-				</li>
-				<li><a href="#"><img src="img\tw.png"></a>
-				</li>
-				<li><a href="#"><img src="img\g+.png"></a>
-				</li>
-				<li><a href="#"><img src="img\insta.png"></a>
-				</li>
-				<li><span>follow us</span></li>
+				<li><a href="#">home</a></li>
+				<li><a href="#">shop</a></li>
+				<li><a href="#">women</a></li>
+				<li><a href="#">men</a></li>
+				<li><a href="#">find stores</a></li>
 			</ul>
 		</div>
-		
-		<div class="slide">
-			
-			<img class="image" src="img\image.png">
-
-			<div class="text">
-
-				<h1>summer collection</h1>
-				<h2>01 mens wear</h2>
-				
-				<div class="rings">
-					<a href="#" class="form1">
-					</a>					
-					<a href="#" class="form2"></a>
-					<a href="#" class="form3"></a>
-				</div>
-
-				<p>Lorem ipsum dolor sit 
-				amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-				<a href="#" class="btntype1">shop now</a>
-
-				<ul class="next">
-					<li><a href="#slide2">next</a>
-
-					</li><img src="img/arrownext.png" alt="">
-
-					<li><a href="#slide1">prev</a>
-
-					</li><img src="img/arrowback.png" alt="">
-
+	</header>
+	<section id="first-section">
+		<div class="section-wrap">
+			<div class="social-menu">
+				<ul>
+					<li><a href="#"><img src="img/fb.png" alt="img"></a>
+					</li>
+					<li><a href="#"><img src="img/tw.png" alt="img"></a>
+					</li>
+					<li><a href="#"><img src="img/g+.png" alt="img"></a>
+					</li>
+					<li><a href="#"><img src="img/insta.png" alt="img"></a>
+					</li>
+					<li><span>follow us</span></li>
 				</ul>
 			</div>
+
+			<div class="slide">
+				<ul class="slides-wrap">
+				<li id="slide1">
+						<img class="image" src="img/image.png" alt="img">
+				<div class="textbox">
+					<h1>summer collection</h1>
+					<p class="menswear">01 mens wear</p>
+					<div class="rings">
+						<a href="#" class="form1"></a>
+						<a href="#" class="form2"></a>
+						<a href="#" class="form3"></a>
+					</div>
+					<p class="textboxp">
+						Lorem ipsum dolor sit 
+					amet, consectetur adipisicing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>
+					<a href="#" class="btntype1">shop now</a>
+				</div>
+				</li>
+					<li id="slide2">
+					</li>
+				</ul>
+					<div class="nextprev">
+						<a href="#slide2">prev</a>
+						<img src="img/arrowback.png" alt="img">
+						<a href="#slide1">next</a>
+						<img src="img/arrownext.png" alt="img">
+					</div>
+				
+				
+			</div>	
 		</div>
 		<div class="ad">
 			<div class="girl-ad">
-				<img src="img\girlad.jpg">
+				<img src="img/girlad.jpg" alt="img">
 			</div>
 			<div class="bg-ad">
 				<h2>special offer of the month</h2>
-				<p>black long sleeve</p>
+				<p>Black long sleeve</p>
 				<div class="price">
 					<ul>
-						<li><span>$105</span></li>
+						<li class="cross">$105</li>
 						<li>$65</li>
-						<li class="btnwhite"><a href="#">shop now</a></li>
+						<li><a href="#" class="btntype2">shop now</a></li>
 					</ul>
 				</div>
 				<div class="timer">
-					<div>09</div>
-					<div>56</div>
-					<div>11</div>
-
+					<div>
+						<p>09</p>
+						<p>....</p>
+						<p>hours</p>
+					</div>
+					<div>
+						<p>56</p>
+						<p>....</p>
+						<p>minutes</p>
+					</div>
+					<div>
+						<p>11</p>
+						<p>....</p>
+						<p>seconds</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<ul class="menu1">
-		<li><a href="#">All</a></li>
-		<li><a href="#">spring summer</a></li>
-		<li><a href="#">sweatshirt</a></li>
-		<li><a href="#">sneakers</a></li>
-		<li><a href="#">gadgets</a></li>
-		<li><a href="#">outdoor</a></li>
-	</ul>
 	<div class="container">
-
-
-
+		<ul class="menu1">
+			<li><a href="#">All</a></li>
+			<li><a href="#">spring-summer</a></li>
+			<li><a href="#">sweatshirt</a></li>
+			<li><a href="#">sneakers</a></li>
+			<li><a href="#">gadgets</a></li>
+			<li><a href="#">outdoor</a></li>
+		</ul>
+		<nav class="navigation">
+			<ul>
+			  <li><a href="#1">All</a>
+				<ul class="dropdown">
+				  <li><a href="#">spring-summer</a></li>
+				  <li><a href="#">sweatshirt</a></li>
+				  <li><a href="#">sneakers</a></li>
+				  <li><a href="#">gadgets</a></li>
+				  <li><a href="#">outdoor</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </nav>
+	</div>
+	<div class="container">
 		<div class="inner">
 			<div class="box1">
-				<span>buy 2 get up 50% off</span>
+				<p class="bold">buy 2 get up 50% off</p>
 			</div>
 			<div class="box2">
-
 			</div>
 			<div class="box3">
-				<div class="new"><img src="img/Rechteck-6.png" width="50"><span>new</span></div>
+				<div class="new">
+					<img src="img/Rechteck-6.png" alt="img" width="50"><span>new</span>
+				</div>
+				<div class="vintagewomen">
+					<span class="winter">Winter jacket</span>
+					<div class="bold"><span>vintage look for women</span>
+					</div>
+					<a href="#" class="btntype1">shop now</a>
+				</div>
 			</div>
 			<div class="box4">
-
+				<div class="vintagemen">
+					<span class="winter">Winter jacket</span>
+					<div class="bold"><span>fashion for men</span>
+					</div>
+					<a href="#" class="btntype1">shop now</a>
+				</div>
 			</div>
 			<div class="box5">
 				<div class="new">
-					<img src="img/Rechteck-6.png" width="50">
+					<img src="img/Rechteck-6.png" alt="img" width="50">
 					<span>new</span>
 				</div>
 				<p>40% off on sunglasses</p>
@@ -156,15 +212,12 @@
 				<div class="small">
 					SIGN UP NOW AND GET 50% OFF
 				</div>
-				<a href="#" class="btn6">SEE FULL COLLECTION</a>
+				<a href="#" class="btntype3">SEE FULL COLLECTION</a>
 			</div>
 		</div>
 	</div>
-
-</div>
-</div>
 <div class="container">
-	<div class="boxh">
+	<div class="head2">
 		<h3>
 			product types
 		</h3>
@@ -173,196 +226,236 @@
 		</p>
 	</div>
 </div>
-<div class="discount">
-	<a href="#" class="prew">prev</a>
+<!-- <div class="buttonbox top">
+	<a href="#" class="btntype8 rev"></a>
+	<a href="#" class="btntype8"></a>
+</div> -->
+<div class="block1">
+	<a href="#" class="btntype7">prev</a>
 	<div class="box7">
-		<a href="#" class="btn">shop men
+		<a href="#" class="btntype4">shop men
 		</a>
 	</div>
 	<div class="box8">
-		<a href="#" class="btn">shop woman
+		<a href="#" class="btntype4">shop woman
 		</a>
 	</div>
 	<div class="box9">
-		<a href="#" class="btn">shop kids
+		<a href="#" class="btntype4">shop kids
 		</a>
 	</div>
-	<a href="#" class="prew">next</a>
-
+	<a href="#" class="btntype7">next</a>
 </div>
 <div class="container">
-	<p class="featured">featured products</p>
+	<div class="head3">
+		<h3>
+			featured products
+		</h3>
+	</div>
 </div>
-<ul class="menu1">
-	<li><a href="#">All</a></li>
-	<li><a href="#">spring summer</a></li>
-	<li><a href="#">sweatshirt</a></li>
-	<li><a href="#">sneakers</a></li>
-	<li><a href="#">gadgets</a></li>
-	<li><a href="#">outdoor</a></li>
-</ul>
-<div class="products">
-	<a href="#" class="prev">p
-	</a>
-	<div class="box10"><img src="img/Image10.png" height="395" width="270">
-		<h4>Ted Baker Womens Light
-		</h4>
-		<p>
-			Gucci
-		</p>
-		<span class="oldprice">
-			$70
-		</span>
-		<span class="price">
-			$120
-		</span>
-		
-
-	</div>
-	<div class="box10"><img src="img/Image11.png" height="395" width="270">
-		<h4>Ted Baker Womens Light
-		</h4>
-		<span>
-			Gucci
-		</span>
-		<p>
-			$70
-		</p>
-		<h4>
-			$120
-		</h4>
-	</div>
-	<div class="box10"><img src="img/Image12.png" height="395" width="270">
-		<h4>Ted Baker Womens Light
-		</h4>
-		<span>
-			Gucci
-		</span>
-		<p>
-			$70
-		</p>
-		<h4>
-			$120
-		</h4>
-	</div>
-	<div class="box10"><img src="img/Image13.png" height="395" width="270">
-		<h4>Ted Baker Womens Light
-		</h4>
-		<span>
-			Gucci
-		</span>
-		<p>
-			$70
-		</p>
-		<h4>
-			$120
-		</h4>
-	</div>
-	<a href="#" class="prew2">n
-	</a>
-</div>
-
 <div class="container">
-
+	<ul class="menu1">
+		<li><a href="#">All</a></li>
+		<li><a href="#">spring-summer</a></li>
+		<li><a href="#">sweatshirt</a></li>
+		<li><a href="#">sneakers</a></li>
+		<li><a href="#">gadgets</a></li>
+		<li><a href="#">outdoor</a></li>
+	</ul>
+	<nav class="navigation">
+		<ul>
+		  <li><a href="#1">All</a>
+			<ul class="dropdown">
+			  <li><a href="#">spring-summer</a></li>
+			  <li><a href="#">sweatshirt</a></li>
+			  <li><a href="#">sneakers</a></li>
+			  <li><a href="#">gadgets</a></li>
+			  <li><a href="#">outdoor</a></li>
+			</ul>
+		  </li>
+		</ul>
+	  </nav>
+</div>
+<div class="block4">
+	<a href="#" class="btntype8 rev"></a>
+		<div class="block3">
+			<div class="frame box-10">
+				<div class="textblock">
+					<h4>Ted Baker Womens Light</h4>
+					<p>Gucci</p>
+					<span>$70.00</span>
+					<h4 class="inline">$120.00</h4>
+				</div>
+			</div>
+			<div class="frame box-11">
+		<!-- <img src="img/Image11.png" alt="img"> -->
+				<div class="textblock">
+					<h4>Ted Baker Womens Light</h4>
+					<p>Gucci</p>
+					<span>$70.00</span>
+					<h4 class="inline">$120.00</h4>
+				</div>
+			</div>
+			<div class="frame box-12">
+		<!-- <img src="img/Image12.png" alt="img"> -->
+				<div class="textblock">
+					<h4>Ted Baker Womens Light</h4>
+					<p>Gucci</p>
+					<span>$70.00</span>
+					<h4 class="inline">$120.00</h4>
+				</div>
+			</div>
+			<div class="frame box-13">
+		<!-- <img src="img/Image13.png" alt="img"> -->
+				<div class="textblock">
+					<h4>Ted Baker Womens Light</h4>
+					<p>Gucci</p>
+					<span>$70.00</span>
+					<h4 class="inline">$120.00</h4>
+				</div>
+			</div>
+		</div>
+	<a href="#" class="btntype8"></a>
+</div>
+<div class="container">
+	<a href="#" class="btntype5">show more</a>
+</div>
+<div class="container">
 	<div class="box11">
 		<div class="textbox11">
-			<div class="big">WE OFFER BRAND NEW STYLES
+			<div class="big">subscribe to our newsletter
 			</div>
 			<div class="small">
-				SIGN UP NOW AND GET 50% OFF
+				SIGN UP NOW AND GET 75% OFF
 			</div>
-			<a href="#" class="btn11">SEE FULL COLLECTION</a>
+			<a href="#" class="btntype6">sign up now</a>
 		</div>
 	</div>
-
 	<div class="big blogs"> our blogs & news </div>
 </div>
-<div class="products">
-	<a href="#" class="prev">p
-	</a>
-	<div class="box12"><img src="img/Image15.png" height="375" width="570">
-		<div class="box13">
+
+	<div class="block4">
+		<a href="#" class="btntype8 rev"></a>
+		<div class="box x12">
+			<div class="txtblock4">
 			<p class="p1">
 				The 15 Secrets About Fashion People
 			</p>
 			<p class="p2">
 				January 12, 2020 by admin
 			</p>
-
-			
+			</div>
 		</div>
-	</div>
-	<div class="box12"><img src="img/Image16.png" height="375" width="570">
-		<div class="box13">
+		<div class="box x13">
+			<div class="txtblock4">
 			<p class="p1">
 				The 15 Secrets About Fashion People
 			</p>
 			<p class="p2">
 				January 12, 2020 by admin
 			</p>
-
-			
+			</div>
 		</div>
-	</div>
 	
-	<a href="#" class="prew2">n
-	</a>
+<a href="#" class="btntype8"></a>
 </div>
-<div class="six">
+<div class="footer-menu">
 	<div class="container">
-		<div class="list first">
-			<ul>
-				<li>The brand</li>
-				<li>Local stores</li>
-				<li>Customer service</li>
-				<li>Privacy & cookies</li>
-				<li>Site map</li>
-			</ul>
-		</div>
-		<div class="list first">
-			<ul>
-				<li>The brand</li>
-				<li>Local stores</li>
-				<li>Customer service</li>
-				<li>Privacy & cookies</li>
-				<li>Site map</li>
-			</ul>
-		</div>
-		<div class="list first">
-			<ul>
-				<li>The brand</li>
-				<li>Local stores</li>
-				<li>Customer service</li>
-				<li>Privacy & cookies</li>
-				<li>Site map</li>
-			</ul>
-		</div>
-		<div class="list second">
-			<ul>
-				<li>The brand</li>
-				<li>Local stores</li>
-				<li>Customer service</li>
-				<li>Privacy & cookies</li>
-				<li>Site map</li>
-			</ul>
-		</div>
-		<div class="list third">
-			<ul>
-				<li>The brand</li>
-				<li>Local stores</li>
-				<li>Customer service</li>
-				<li>Privacy & cookies</li>
-				<li>Site map</li>
-			</ul>
+			<nav class="navigation">
+					<ul>
+					  <li><a href="#1">information</a>
+						<ul class="dropdown">
+						  <li><a href="#">my profile</a></li>
+						  <li><a href="#">your account</a></li>
+						  <li><a href="#">look book</a></li>
+						  <li><a href="#">contact details</a></li>
+						</ul>
+					  </li>
+					</ul>
+				  </nav>
+		<div class="lists">
+			<div class="list first">
+				<p>information</p>
+				<ul> 
+					<li>The brand</li>
+					<li>Local stores</li>
+					<li>Customer service</li>
+					<li>Privacy & cookies</li>
+					<li>Site map</li>
+				</ul>
+			</div>
+			<div class="list first">
+				<p>my profile</p>
+				<ul>
+					<li>The brand</li>
+					<li>Local stores</li>
+					<li>Customer service</li>
+					<li>Privacy & cookies</li>
+					<li>Site map</li>
+				</ul>
+			</div>
+			<div class="list first">
+				<p>your account</p>
+				<ul>
+					<li>The brand</li>
+					<li>Local stores</li>
+					<li>Customer service</li>
+					<li>Privacy & cookies</li>
+					<li>Site map</li>
+				</ul>
+			</div>
+			<div class="list second">
+				<p>look book</p>
+				<ul>
+					<li>The brand</li>
+					<li>Local stores</li>
+					<li>Customer service</li>
+					<li>Privacy & cookies</li>
+					<li>Site map</li>
+				</ul>
+			</div>
+			<div class="list third">
+				<p>contact details</p>
+				<ul>
+					<li><strong>Telephone:</strong>0123-456-789</li>
+					<li><strong>Email:</strong>free@psdfreebles.com</li>
+					<li>opacity</li>
+					<li><strong>Head Office:</strong>245 Yellow House,<br>Main Street. London. 456789</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
-<footer>
+<footer class="footer">
+	<p class="copyright">
 	© Copyright e-commerce  1.0. 2022 Designed by Psdfreebies.com
+	</p>
 	<a class="logo">
 		fashion
 		<span>tagline here</span>
 	</a>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="./slick/slick.js"></script>
+<script>
+	 $(document).ready(function(){
+		$('.slider').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: false
+		}); 
+	 });
+</script>
+<script>
+$(document).ready(function(){
+  $('.hamburger-toggle').click(function(){
+    $(this).toggleClass('open');
+    $('.mobile-menu').toggleClass('menu-open');
+  });
+});
+</script>
 </body>
 </html>
